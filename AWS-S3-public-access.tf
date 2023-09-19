@@ -1,4 +1,4 @@
-# s3 bucket
+# s3 bucket created 
 
 resource "aws_s3_bucket" "example" {
   bucket = "test-bucket-highmark"
