@@ -1,8 +1,0 @@
-{
-  "RuleName": {
-    "S": "ec2PublicIP"
-  },
-  "emailnotification": {
-    "S": "false"
-  }
-}

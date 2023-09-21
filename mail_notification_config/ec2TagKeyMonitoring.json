@@ -1,8 +1,0 @@
-{
-  "RuleName": {
-    "S": "ec2TagKeyMonitoring"
-  },
-  "emailnotification": {
-    "S": "false"
-  }
-}

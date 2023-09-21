@@ -1,8 +1,0 @@
-{
-  "RuleName": {
-    "S": "ec2ManagedBySSM"
-  },
-  "emailnotification": {
-    "S": "false"
-  }
-}

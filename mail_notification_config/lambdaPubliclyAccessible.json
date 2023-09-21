@@ -1,8 +1,0 @@
-{
-  "RuleName": {
-    "S": "lambdaPubliclyAccessible"
-  },
-  "emailnotification": {
-    "S": "false"
-  }
-}

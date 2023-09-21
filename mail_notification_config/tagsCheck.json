@@ -1,8 +1,0 @@
-{
-    "RuleName": {
-      "S": "tagsCheck"
-    },
-    "emailnotification": {
-      "S": "false"
-    }
-  }

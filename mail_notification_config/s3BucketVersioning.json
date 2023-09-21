@@ -1,8 +1,0 @@
-{
-  "RuleName": {
-    "S": "s3BucketVersioning"
-  },
-  "emailnotification": {
-    "S": "false"
-  }
-}

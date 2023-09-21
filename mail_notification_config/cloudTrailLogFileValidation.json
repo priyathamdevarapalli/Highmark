@@ -1,8 +1,0 @@
-{
-    "RuleName": {
-      "S": "cloudTrailLogFileValidation"
-    },
-    "emailnotification": {
-      "S": "false"
-    }
-  }

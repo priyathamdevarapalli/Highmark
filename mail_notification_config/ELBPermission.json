@@ -1,8 +1,0 @@
-{
-  "RuleName": {
-    "S": "ELBPermission"
-  },
-  "emailnotification": {
-    "S": "false"
-  }
-}

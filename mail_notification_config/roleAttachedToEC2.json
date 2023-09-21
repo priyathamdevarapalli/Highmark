@@ -1,8 +1,0 @@
-{
-  "RuleName": {
-    "S": "roleAttachedToEC2"
-  },
-  "emailnotification": {
-    "S": "false"
-  }
-}

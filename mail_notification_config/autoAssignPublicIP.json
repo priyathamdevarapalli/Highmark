@@ -1,8 +1,0 @@
-{
-  "RuleName": {
-    "S": "autoAssignPublicIP"
-  },
-  "emailnotification": {
-    "S": "false"
-  }
-}

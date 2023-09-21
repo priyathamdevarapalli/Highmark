@@ -1,8 +1,0 @@
-{
-    "RuleName": {
-      "S": "cloudtrail-encryption"
-    },
-    "emailnotification": {
-      "S": "false"
-    }
-  }

@@ -1,8 +1,0 @@
-{
-  "RuleName": {
-    "S": "orphanedSecurityGroups"
-  },
-  "emailnotification": {
-    "S": "false"
-  }
-}
