@@ -1,0 +1,8 @@
+{
+    "RuleName": {
+      "S": "lambdaCloudwatchMonitoring"
+    },
+    "emailnotification": {
+      "S": "false"
+    }
+  }

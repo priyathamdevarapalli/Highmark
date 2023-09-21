@@ -1,0 +1,8 @@
+{
+    "RuleName": {
+      "S": "s3AccessLogging"
+    },
+    "emailnotification": {
+      "S": "false"
+    }
+  }

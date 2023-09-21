@@ -1,0 +1,8 @@
+{
+  "RuleName": {
+    "S": "newUserCreated"
+  },
+  "emailnotification": {
+    "S": "false"
+  }
+}

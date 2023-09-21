@@ -1,0 +1,8 @@
+{
+  "RuleName": {
+    "S": "checkIamEc2Permissions"
+  },
+  "emailnotification": {
+    "S": "false"
+  }
+}

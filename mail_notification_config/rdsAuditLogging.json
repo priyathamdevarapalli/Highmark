@@ -1,0 +1,8 @@
+{
+  "RuleName": {
+    "S": "rdsAuditLogging"
+  },
+  "emailnotification": {
+    "S": "false"
+  }
+}

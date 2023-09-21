@@ -1,0 +1,34 @@
+---
+metadata:
+  id: del_002
+  name: "deloitte: a custom build policy created with terraform"
+  guidelines: "fix it"
+  category: general
+  severity: high
+scope:
+  provider: aws
+definition:
+    and:    
+      - cond_type: "connection"
+        resource_types:
+          - "aws_iam_role_policy_attachment"
+        connected_resource_types:
+          - "aws_iam_policy"
+        operator: "not_exists"
+      - cond_type: "connection"
+        resource_types:
+          - "aws_iam_role_policy_attachment"
+        connected_resource_types:
+          - "aws_iam_role"
+        operator: "exists"
+      - cond_type: "attribute"
+        resource_types:
+          - "aws_iam_policy"
+        attribute: "policy.Statement[?(@.Effect == \"Allow\" & @.Resource == \"*\")].Action[*]"
+        operator: "jsonpath_equals"
+        value: "ecs:ExecuteCommand"  
+      - cond_type: "filter"
+        attribute: "resource_type"
+        value:
+        - "aws_iam_policy"
+        operator: "within"

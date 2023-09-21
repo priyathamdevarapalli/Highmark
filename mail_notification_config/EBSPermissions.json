@@ -1,0 +1,8 @@
+{
+  "RuleName": {
+    "S": "EBSPermissions"
+  },
+  "emailnotification": {
+    "S": "false"
+  }
+}

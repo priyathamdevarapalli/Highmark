@@ -1,0 +1,8 @@
+{
+  "RuleName": {
+    "S": "kinesisloggingenable"
+  },
+  "emailnotification": {
+    "S": "false"
+  }
+}

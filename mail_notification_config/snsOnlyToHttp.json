@@ -1,0 +1,8 @@
+{
+    "RuleName": {
+      "S": "snsOnlyToHttp"
+    },
+    "emailnotification": {
+      "S": "false"
+    }
+  }

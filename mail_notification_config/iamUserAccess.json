@@ -1,0 +1,8 @@
+{
+  "RuleName": {
+    "S": "iamUserAccess"
+  },
+  "emailnotification": {
+    "S": "false"
+  }
+}
