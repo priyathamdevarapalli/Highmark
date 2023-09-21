@@ -1,0 +1,11 @@
+Type = 'AWS::IAM::Policy'
+Properties =
+  PolicyName = xyz
+  PolicyDocument =
+    Version = "2012-10-17"
+    Statement =
+      - Effect = 'Allow'
+        NotAction = '*'
+        Resource ='*'
+  Roles =
+

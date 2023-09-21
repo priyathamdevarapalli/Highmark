@@ -1,0 +1,8 @@
+{
+  "RuleName": {
+    "S": "eksPublicAccess"
+  },
+  "emailnotification": {
+    "S": "false"
+  }
+}

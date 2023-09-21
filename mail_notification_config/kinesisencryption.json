@@ -1,0 +1,8 @@
+{
+  "RuleName": {
+    "S": "kinesisencryption"
+  },
+  "emailnotification": {
+    "S": "false"
+  }
+}

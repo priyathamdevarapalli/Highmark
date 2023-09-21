@@ -1,0 +1,8 @@
+{
+  "RuleName": {
+    "S": "cmkPolicy"
+  },
+  "emailnotification": {
+    "S": "false"
+  }
+}

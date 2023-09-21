@@ -1,0 +1,21 @@
+{
+  "RuleName": {
+    "S": "monitor-mailnotification"
+  },
+  ":monitormailnotification": {
+    "S": "true"
+  },
+  "ignoredfunctionnames": {
+    "SS": [
+      "dgp-csao-snlprod-use2-fortress-monitor-function",
+      "dgp-csao-snlprod-use2-fortress-monitor-notify-function"
+    ]
+  },
+  "ignoredkeywords": {
+    "SS": [
+      "Unable to fetch Tags or No tags not Found",
+      "Client.DryRunOperation",
+      "'Request would have succeeded, but DryRun flag is set"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "RuleName": {
+    "S": "elbListener"
+  },
+  "emailnotification": {
+    "S": "false"
+  }
+}

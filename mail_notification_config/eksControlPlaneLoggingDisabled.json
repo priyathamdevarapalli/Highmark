@@ -1,0 +1,8 @@
+{
+  "RuleName": {
+    "S": "eksControlPlaneLoggingDisabled"
+  },
+  "emailnotification": {
+    "S": "false"
+  }
+}

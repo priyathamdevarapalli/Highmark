@@ -1,0 +1,8 @@
+{
+    "RuleName": {
+      "S": "awsWaf"
+    },
+    "emailnotification": {
+      "S": "false"
+    }
+  }

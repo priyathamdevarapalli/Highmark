@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: webserver
+  labels:
+    name: webserver
+spec:
+  containers:
+  - name: webserver
+    image: nginx:alpine
+    securityContext:
+      readOnlyRootFilesystem: false
+    ports:
+      - containerPort: 80

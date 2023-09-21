@@ -1,0 +1,8 @@
+{
+  "RuleName": {
+    "S": "enableTerminationProtection"
+  },
+  "emailnotification": {
+    "S": "false"
+  }
+}
