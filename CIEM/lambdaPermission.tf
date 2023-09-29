@@ -9,6 +9,10 @@ resource "aws_lambda_function" "test_lambda" {
   depends_on = [
     aws_iam_role_policy_attachment.lambda_logs,
   ]
+  tags = {
+    git_repo  = "Highmark"
+    yor_trace = "81cdc962-bb9e-44e5-9392-4240429fe447"
+  }
 }
 
 # See also the following AWS managed policy: AWSLambdaBasicExecutionRole
@@ -32,6 +36,10 @@ resource "aws_iam_policy" "lambda_logging" {
   ]
 }
 EOF
+  tags = {
+    git_repo  = "Highmark"
+    yor_trace = "fd6c9bb7-eba7-460c-a5f4-f2269b6d0b84"
+  }
 }
 
 resource "aws_iam_role_policy_attachment" "lambda_logs" {

@@ -21,6 +21,10 @@ resource "aws_iam_user_policy" "lb_ro" {
 resource "aws_iam_user" "lb" {
   name = "loadbalancer"
   path = "/system/"
+  tags = {
+    git_repo  = "Highmark"
+    yor_trace = "4c4a5aba-97b2-4fbb-a568-ff5de16fd066"
+  }
 }
 
 resource "aws_iam_access_key" "lb" {

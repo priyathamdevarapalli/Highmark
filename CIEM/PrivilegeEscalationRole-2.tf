@@ -9,10 +9,14 @@ resource "aws_iam_policy" "policy" {
     Statement = [
       {
         Action = "sts:AssumeRole",
-        
+
         Effect   = "Allow"
         Resource = "*"
       },
     ]
   })
+  tags = {
+    git_repo  = "Highmark"
+    yor_trace = "336605b0-d4da-492c-a847-56027108c6e9"
+  }
 }

@@ -40,6 +40,8 @@ resource "aws_s3_bucket" "example" {
   tags = {
     Name        = "My bucket"
     Environment = "Dev"
+    git_repo    = "Highmark"
+    yor_trace   = "45af9995-01ec-4110-8319-ecd5327447f0"
   }
 }
 resource "random_pet" "this" {
@@ -51,6 +53,10 @@ resource "aws_kms_key" "replica" {
 
   description             = "S3 bucket replication KMS key"
   deletion_window_in_days = 7
+  tags = {
+    git_repo  = "Highmark"
+    yor_trace = "6ce52d33-4adf-4c12-8964-912446c16612"
+  }
 }
 
 module "replica_bucket" {

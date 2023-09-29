@@ -12,7 +12,7 @@ resource "aws_iam_user" "user" {
     git_last_modified_by = "nimrodkor@gmail.com"
     git_modifiers        = "nimrodkor"
     git_org              = "bridgecrewio"
-    git_repo             = "terragoat"
+    git_repo             = "Highmark"
     yor_trace            = "9b45b298-c1ea-426a-9644-610780021eaa"
   })
 
@@ -27,19 +27,19 @@ resource "aws_iam_user_policy" "userpolicy" {
   user = "${aws_iam_user.user.name}"
 
   policy = {
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Action": [
-        "ec2:*",
-        "s3:*",
-        "lambda:*",
-      ],
-      "Effect": "Allow",
-      "Resource": "*"
-    }
-  ]
-}
+    "Version" : "2012-10-17",
+    "Statement" : [
+      {
+        "Action" : [
+          "ec2:*",
+          "s3:*",
+          "lambda:*",
+        ],
+        "Effect" : "Allow",
+        "Resource" : "*"
+      }
+    ]
+  }
 }
 
 resource "aws_iam_role_policy" "test_policy" {
@@ -66,17 +66,21 @@ resource "aws_iam_role" "role" {
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17",
-    Statement= [
+    Statement = [
       {
         Action = "sts:AssumeRole",
-        Principal= {
-        Service = "ec2.amazonaws.com"
-      },
-        Effect = "Allow",
+        Principal = {
+          Service = "ec2.amazonaws.com"
+        },
+        Effect   = "Allow",
         Resource = "*"
-    }
-  ]
-})
+      }
+    ]
+  })
+  tags = {
+    git_repo  = "Highmark"
+    yor_trace = "22ab228a-bd7f-4efa-9fe9-7e3dfe467050"
+  }
 }
 
 
@@ -98,6 +102,10 @@ resource "aws_iam_role" "role" {
   ]
 }
 EOF
+  tags = {
+    git_repo  = "Highmark"
+    yor_trace = "22ab228a-bd7f-4efa-9fe9-7e3dfe467050"
+  }
 }
 
 resource "aws_iam_role" "test_role" {
@@ -120,7 +128,9 @@ resource "aws_iam_role" "test_role" {
   })
 
   tags = {
-    tag-key = "tag-value"
+    tag-key   = "tag-value"
+    git_repo  = "Highmark"
+    yor_trace = "25e44331-bfde-42aa-9076-d099dfce200d"
   }
 }
 
@@ -142,6 +152,10 @@ resource "aws_iam_policy" "policy" {
   ]
 }
 EOF
+  tags = {
+    git_repo  = "Highmark"
+    yor_trace = "00a6caee-34eb-4c19-94e9-827fc0223072"
+  }
 }
 
 resource "aws_iam_policy" "policy" {
@@ -153,13 +167,17 @@ resource "aws_iam_policy" "policy" {
   policy = jsonencode({
     Version = "2012-10-17"
     Statement = [
-        {
-            Effect = "Allow",
-            Action = "iam:*",
-            Resource = "aws:*",
-        }
+      {
+        Effect   = "Allow",
+        Action   = "iam:*",
+        Resource = "aws:*",
+      }
     ]
   })
+  tags = {
+    git_repo  = "Highmark"
+    yor_trace = "00a6caee-34eb-4c19-94e9-827fc0223072"
+  }
 }
 ##kms actions
 
@@ -172,18 +190,22 @@ resource "aws_iam_policy" "policy" {
   policy = jsonencode({
     Version = "2012-10-17"
     Statement = [
-        {
-            Effect = "Allow",
-            Action = "*",
-            Resource = "kms:Decrypt",
-            Condition = {
-                BoolIfExists = {
-                    aws = "MultiFactorAuthPresent"
-                }
-            }
+      {
+        Effect   = "Allow",
+        Action   = "*",
+        Resource = "kms:Decrypt",
+        Condition = {
+          BoolIfExists = {
+            aws = "MultiFactorAuthPresent"
+          }
         }
+      }
     ]
   })
+  tags = {
+    git_repo  = "Highmark"
+    yor_trace = "00a6caee-34eb-4c19-94e9-827fc0223072"
+  }
 }
 resource "aws_iam_group_policy" "my_developer_policy" {
   name  = "my_developer_policy"

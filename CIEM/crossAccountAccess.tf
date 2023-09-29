@@ -18,6 +18,8 @@ resource "aws_iam_role" "test_role" {
   })
 
   tags = {
-    tag-key = "tag-value"
+    tag-key   = "tag-value"
+    git_repo  = "Highmark"
+    yor_trace = "f6b312bd-4d3c-401c-aea7-e27a1bd1c2cb"
   }
 }

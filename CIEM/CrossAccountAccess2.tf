@@ -12,18 +12,20 @@ resource "aws_iam_role" "test_role" {
         Sid    = ""
         Principal = {
           Service = "ec2.amazonaws.com"
-        Condition = {
-		      StringEquals =  { 
-            "sts:ExternalId" = "111111111111"
+          Condition = {
+            StringEquals = {
+              "sts:ExternalId" = "111111111111"
+            }
           }
         }
       }
+    ]
     }
-	]
-}
   )
 
   tags = {
-    tag-key = "tag-value"
+    tag-key   = "tag-value"
+    git_repo  = "Highmark"
+    yor_trace = "844ef9c4-6771-485b-9f59-9d24694a3aea"
   }
 }

@@ -49,4 +49,8 @@ resource "aws_iam_policy" "example" {
   name   = "example_policy"
   path   = "/"
   policy = data.aws_iam_policy_document.example.json
+  tags = {
+    git_repo  = "Highmark"
+    yor_trace = "33aa8632-9a10-4fae-8b33-52426f1260c0"
+  }
 }
