@@ -14,7 +14,7 @@ resource "aws_neptune_cluster" "default" {
     git_last_modified_by = "matt@bridgecrew.io"
     git_modifiers        = "matt"
     git_org              = "bridgecrewio"
-    git_repo             = "terragoat"
+    git_repo             = "Highmark"
     yor_trace            = "0d4cbb85-73ed-4ca0-b1da-296e4185f34e"
   }
 }
@@ -33,7 +33,7 @@ resource "aws_neptune_cluster_instance" "default" {
     git_last_modified_by = "nimrodkor@users.noreply.github.com"
     git_modifiers        = "matt/nimrodkor"
     git_org              = "bridgecrewio"
-    git_repo             = "terragoat"
+    git_repo             = "Highmark"
     yor_trace            = "9b2b45fd-6f9f-44fd-b8bc-868b1db178b3"
   }
 }

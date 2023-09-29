@@ -16,6 +16,10 @@ resource "aws_iam_role" "role" {
   ]
 }
 EOF
+  tags = {
+    git_repo  = "Highmark"
+    yor_trace = "aa542835-d47a-46d6-8b46-f9f9585b3360"
+  }
 }
 
 resource "aws_iam_policy" "policy" {
@@ -36,6 +40,10 @@ resource "aws_iam_policy" "policy" {
   ]
 }
 EOF
+  tags = {
+    git_repo  = "Highmark"
+    yor_trace = "13c64c3f-a2ee-4001-9c8c-ec235789dcd3"
+  }
 }
 
 resource "aws_iam_role_policy_attachment" "test-attach" {

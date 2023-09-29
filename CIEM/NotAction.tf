@@ -17,4 +17,8 @@ resource "aws_iam_policy" "policy" {
       },
     ]
   })
+  tags = {
+    git_repo  = "Highmark"
+    yor_trace = "517f78e4-1490-493f-91c2-6cf3adf6aaae"
+  }
 }

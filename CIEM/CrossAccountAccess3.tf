@@ -12,13 +12,15 @@ resource "aws_iam_role" "test_role" {
         Sid    = ""
         Principal = {
           AWS = "arn:aws:iam::974224957526:root"
-		}
+        }
       }
-	]
-}
+    ]
+    }
   )
 
   tags = {
-    tag-key = "tag-value"
+    tag-key   = "tag-value"
+    git_repo  = "Highmark"
+    yor_trace = "3b2c388b-9c35-4ec5-bc18-189724e8b998"
   }
 }

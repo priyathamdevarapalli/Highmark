@@ -9,11 +9,15 @@ resource "aws_iam_policy" "policy" {
     Statement = [
       {
         Action = "sts:AssumeRole",
-        
+
         Effect   = "Allow"
         Resource = "arn:aws:iam::974224957526:role/Test-AdminAccess"
       },
     ]
   })
+  tags = {
+    git_repo  = "Highmark"
+    yor_trace = "e0906ec3-0026-45f2-b182-b5e3416f0ecf"
+  }
 }
 

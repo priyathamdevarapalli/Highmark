@@ -9,10 +9,14 @@ resource "aws_iam_policy" "policy" {
     Statement = [
       {
         Action = "sts:*",
-        
+
         Effect   = "Allow"
         Resource = "*"
       },
     ]
   })
+  tags = {
+    git_repo  = "Highmark"
+    yor_trace = "31eae749-767e-4f17-8c7b-c0fcaeb3f884"
+  }
 }

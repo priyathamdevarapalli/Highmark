@@ -21,7 +21,7 @@ resource "aws_elasticsearch_domain" "monitoring-framework" {
     git_last_modified_by = "nimrodkor@gmail.com"
     git_modifiers        = "nimrodkor"
     git_org              = "bridgecrewio"
-    git_repo             = "terragoat"
+    git_repo             = "Highmark"
     yor_trace            = "95131dec-d7c9-49bb-9aff-eb0e2736603b"
   }
 }

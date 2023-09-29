@@ -21,6 +21,11 @@ Resources:
               - Effect: Allow
                 Action: '*'
                 Resource: '*'
+      Tags:
+        - Key: git_repo
+          Value: Highmark
+        - Key: yor_trace
+          Value: e0a6fa03-a44a-479f-9698-ae855705a465
   RootInstanceProfile:
     Type: 'AWS::IAM::InstanceProfile'
     Properties:

@@ -18,7 +18,9 @@ resource "aws_iam_role" "Untrusted-accounts" {
   })
 
   tags = {
-    tag-key = "tag-value"
+    tag-key   = "tag-value"
+    git_repo  = "Highmark"
+    yor_trace = "d6ca92dc-7e9e-4e3a-a83f-b3a3b7b7c410"
   }
 }
 
